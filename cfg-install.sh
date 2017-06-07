@@ -1,6 +1,7 @@
 #!/bin/bash
 #shamelessly stolen from https://developer.atlassian.com/blog/2016/02/best-way-to-store-dotfiles-git-bare-repo/
 
+git clone --bare https://github.com/ChucklesTheBeard/.dotfiles.git $HOME/.dotfiles
 function config {
     /usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME $@
 }
