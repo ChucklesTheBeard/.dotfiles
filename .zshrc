@@ -89,3 +89,6 @@ arch-audit -u
 
 # dotfiles management
 alias config='/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
+
+# disable C-s / C-q scroll lock
+stty -ixon
