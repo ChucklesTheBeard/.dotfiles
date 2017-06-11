@@ -18,5 +18,6 @@ export GTK2_RC_FILES="$HOME/.gtkrc-2.0"
 # exec startxfce4
 # ...or the Window Manager of your choice
 
+SUDO_EDITOR=vim
 DISPLAY=:0.1 openbox &
 exec openbox-session
