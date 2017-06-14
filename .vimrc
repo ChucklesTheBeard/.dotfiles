@@ -10,9 +10,14 @@ set ignorecase
 set smartcase
 set ruler
 set background=dark
-
+set nocompatible
 
 let python_highlight_all = 1
-set tw=79
+"set tw=79
 set formatoptions+=t
 
+let g:vimwiki_list = [{'path': '~/vimwiki',
+                   \ 'syntax': 'markdown',
+                      \ 'ext': '.md'}]
+
+execute pathogen#infect()
