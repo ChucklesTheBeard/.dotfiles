@@ -18,6 +18,9 @@ set formatoptions+=t
 
 let g:vimwiki_list = [{'path': '~/vimwiki',
                    \ 'syntax': 'markdown',
-                      \ 'ext': '.md'}]
+                      \ 'ext': '.md',
+                      \ 'custom_wiki2html': '~/bin/vim/wiki2html.sh',
+                      \ 'custom_wiki2html_args': '',
+                      \ 'auto_export' : 1}]
 
 execute pathogen#infect()
