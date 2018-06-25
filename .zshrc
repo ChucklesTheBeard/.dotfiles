@@ -69,6 +69,9 @@ fi
 
 # ssh
 # export SSH_KEY_PATH="~/.ssh/dsa_id"
+if [ -f $HOME/.ssh/add_ssh_agent.sh ]; then
+    source $HOME/.ssh/add_ssh_agent.sh
+fi
 
 # Set personal aliases, overriding those provided by oh-my-zsh libs,
 # plugins, and themes. Aliases can be placed here, though oh-my-zsh
@@ -94,3 +97,4 @@ function config {
 
 # disable C-s / C-q scroll lock
 stty -ixon
+
